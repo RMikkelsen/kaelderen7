@@ -1,3 +1,44 @@
+
+/* fonts from Adobe:
+
+font-family: adobe-handwriting-frank, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Adobe Handwriting Tiffany
+
+font-family: adobe-handwriting-tiffany, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Adobe Handwriting Ernie
+
+font-family: adobe-handwriting-ernie, sans-serif;
+font-weight: 400;
+font-style: normal;
+*/
+
+/* text on slider images*/
+.top-right {
+  position: absolute;
+  top: 8px;
+ right: 16px;
+color: white;
+font-family: adobe-handwriting-ernie, sans-serif;
+font-weight: 600;
+font-style: normal;
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+ left: 16px;
+ color: black;
+ font-family: adobe-handwriting-ernie, sans-serif;
+ font-weight: 600;
+ font-style: normal;
+}
+
+
 /*from W3 schools, must have relative positioning - Ruth */
 
 * {box-sizing: border-box;}
@@ -5,6 +46,7 @@
 .img-comp-container {
   position: relative;
   height: 400px; /*should be the same height as the images*/
+
 }
 
 .img-comp-img {
