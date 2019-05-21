@@ -1,7 +1,32 @@
-font-family: adobe-handwriting-tiffany,sans-serif;
-font-weight: 400;
-font-style: normal;
+/*from W3 schools, must have relative positioning - Ruth */
 
-font-family: adobe-handwriting-ernie,sans-serif;
-font-weight: 400;
-font-style: normal;
+* {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 400px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  opacity: 0.7;
+  border-radius: 50%;
+}
