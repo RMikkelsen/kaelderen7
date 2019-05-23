@@ -23,8 +23,8 @@ font-style: normal;
 #header-container {
   background-color: black;
   background: cover;
-padding-top: 40px;
-    padding-bottom: 40px;
+padding-top: 100px;
+    padding-bottom: 100px;
 }
 .logo {
     
@@ -49,15 +49,17 @@ color: white;
 font-family: adobe-handwriting-ernie, sans-serif;
 font-weight: 600;
 font-style: normal;
+    font-size:30px;
 }
 .top-left {
   position: absolute;
   top: 8px;
  left: 16px;
- color: black;
+ color: white;
  font-family: adobe-handwriting-ernie, sans-serif;
  font-weight: 600;
  font-style: normal;
+    font-size: 30px;
 }
 
 
@@ -98,13 +100,28 @@ font-style: normal;
   border-radius: 50%;
 }
 
-<<<<<<< HEAD
+
 h1 {
     font-family: adobe-handwriting-ernie, sans-serif;
 font-weight: 400;
 font-style: normal;
      text-align: center;
     
+}
+
+h2 
+
+{
+    font-family: adobe-handwriting-tiffany, sans-serif;
+font-weight: 800;
+font-style: normal;
+    text-align: center;
+}
+h3 {
+     font-family: adobe-handwriting-tiffany, sans-serif;
+font-weight: 700;
+font-style: normal;
+    text-align: center;
 }
 p {
     font-family: adobe-handwriting-tiffany, sans-serif;
@@ -115,8 +132,32 @@ font-style: normal;
     
 }
 
+ul {
+    list-style-type: none;
+    
+}
 
-=======
+.content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* three  and 2 equal columns for food menu */
+.column {
+  float: left;
+  width: 33.33%;
+}
+.column2 {
+  float: right;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .right {
     float:right;
     position: sticky;
@@ -180,15 +221,7 @@ font-style: normal;
   background-size: cover;
 }
 
-h1 {
-    text-align: center;
-    font-size: 40px;
-}
 
-h2 {
-    text-align: center;
-    font-size: 32px;
-}
 
 .dropbtn {
   font-size: 16px;
@@ -221,4 +254,4 @@ h2 {
 }
 
 .show {display: block;}
->>>>>>> master
+
