@@ -108,6 +108,17 @@ function myFunction() {
         </script>
     
     </div>
+    
+        <div id='map'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoidGh1bmRlcnNvbiIsImEiOiJjanRnd2t1dTAwb3NwM3lydWQ4Y2E5enh0In0.RujQPBvmr0gH64Nm24612Q';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/thunderson/cjtgwqfda73lz1frmo7nlxyjv',
+            center: [21.142780, 55.707500],
+            zoom: 12.0
+        });
+    </script>
 
   </body>
 </html>

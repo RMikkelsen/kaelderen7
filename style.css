@@ -1,4 +1,3 @@
-
 /* fonts from Adobe:
 
 font-family: adobe-handwriting-frank, sans-serif;
@@ -20,120 +19,140 @@ font-style: normal;
 
 /* text on slider images*/
 .top-right {
-  position: absolute;
-  top: 8px;
- right: 16px;
-color: white;
-font-family: adobe-handwriting-ernie, sans-serif;
-font-weight: 600;
-font-style: normal;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    color: white;
+    font-family: adobe-handwriting-ernie, sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
+
 .top-left {
-  position: absolute;
-  top: 8px;
- left: 16px;
- color: black;
- font-family: adobe-handwriting-ernie, sans-serif;
- font-weight: 600;
- font-style: normal;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: black;
+    font-family: adobe-handwriting-ernie, sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 
 /*from W3 schools, must have relative positioning - Ruth */
 
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
 .img-comp-container {
-  position: relative;
-  height: 400px; /*should be the same height as the images*/
+    position: relative;
+    height: 400px;
+    /*should be the same height as the images*/
 
 }
 
 .img-comp-img {
-  position: absolute;
-  width: auto;
-  height: auto;
-  overflow: hidden;
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
 }
 
 .img-comp-img img {
-  display: block;
-  vertical-align: middle;
+    display: block;
+    vertical-align: middle;
 }
 
 .img-comp-slider {
-  position: absolute;
-  z-index: 9;
-  cursor: ew-resize;
-  /*set the appearance of the slider:*/
-  width: 40px;
-  height: 40px;
-  background-color: black;
-  opacity: 0.7;
-  border-radius: 50%;
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    /*set the appearance of the slider:*/
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 50%;
 }
 
 .right {
-    float:right;
+    float: right;
     position: sticky;
 }
+/* https://www.w3schools.com/howto/howto_js_sidenav.asp */
 /* The side navigation menu */
 .sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  right: 0; /* Opens up on the right side*/
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    /* Opens up on the right side*/
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The opening days and hours */
 .sidenav a {
-  padding: 16px 16px 16px 32px;
-  text-decoration: none;
-  font-size: 35px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+    padding: 16px 16px 16px 32px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s;
-  padding: 20px;
+    transition: margin-left .5s;
+    padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
 .bg {
-      /* The image used */
-  background-image: url(images/glacier-daltile-mosaic-tile-550022hd1p2-64_300.jpg);
+    /* The image used */
+    background-image: url(images/glacier-daltile-mosaic-tile-550022hd1p2-64_300.jpg);
 
-  /* Full height */
-  height: 100%; 
-  padding: 32px 32px 32px 32px;
+    /* Full height */
+    height: 100%;
+    padding: 32px 32px 32px 32px;
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
@@ -146,34 +165,45 @@ h2 {
     font-size: 32px;
 }
 
-.dropbtn {
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+/* https://www.w3schools.com/w3css/w3css_dropdowns.asp */
+    
+@media only screen and (max-width: 600px) {
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        left: 40%;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    .show {
+        display: block;
+    }
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-  left:40%;
-}
-
-.dropdown-content {
-  display: none;
-  position: relative;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-}
-
-.show {display: block;}
+#map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 1400px;
+            height:500px;
+            border-radius: 50%;
+            margin-left: 17vw;
+        }
