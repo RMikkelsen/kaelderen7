@@ -6,8 +6,10 @@
     <meta name="description" content="Cafe, Deli, Kiosk, Kaelderen 7">
     <meta name="keywords" content="Cafe, Deli, Kiosk, cheap coffee, sandwiches, wine, beer, juice, tea, Kaelderen 7">
     <meta name="author" content="Ruth, Lukas, Marija">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <title>kaelderen 7</title>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/zpu3xfv.css">
     <script src="kaelderen.js">
@@ -265,18 +267,57 @@
         </script>
 
     </div>
-    
-        <div id='map'></div>
+
+   
+   <div class="info_column">
+    <div id='map'></div>
+    </div>
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoidGh1bmRlcnNvbiIsImEiOiJjanRnd2t1dTAwb3NwM3lydWQ4Y2E5enh0In0.RujQPBvmr0gH64Nm24612Q';
-        const map = new mapboxgl.Map({
+
+        var map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/thunderson/cjtgwqfda73lz1frmo7nlxyjv',
-            center: [21.142780, 55.707500],
-            zoom: 12.0
+            style: 'mapbox://styles/thunderson/cjvyzrpks02b81co3b7tqvfys',
+            center: [10.203342, 56.154616],
+            zoom: 16.0
         });
+
+        map.on('load', function() {
+            map.loadImage('https://cdn4.iconfinder.com/data/icons/maps-and-navigation-solid-icons-vol-1/72/19-512.png', function(error, image) {
+                if (error) throw error;
+                map.addImage('location', image);
+                map.addLayer({
+                    "id": "points",
+                    "type": "symbol",
+                    "source": {
+                        "type": "geojson",
+                        "data": {
+                            "type": "FeatureCollection",
+                            "features": [{
+                                "type": "Feature",
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [10.203366, 56.154820]
+                                }
+                            }]
+                        }
+                    },
+                    "layout": {
+                        "icon-image": "location",
+                        "icon-size": 0.14,
+                        
+                    }
+                });
+            });
+        });
+
     </script>
 
+<div class="info_column">
+  
+   <p>Address</p>
+   
+    </div>
 
 </body>
 
