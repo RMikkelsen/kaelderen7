@@ -1,6 +1,4 @@
 
-
-
 /*from W3 schools img comparison slider - Ruth */
 
 
