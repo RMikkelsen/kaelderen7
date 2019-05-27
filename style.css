@@ -53,28 +53,26 @@ font-style: normal;
     font-family: adobe-handwriting-ernie, sans-serif;
     font-weight: 600;
     font-style: normal;
-<<<<<<< HEAD
-=======
+
     font-size: 30px;
->>>>>>> master
+
 }
 
 .top-left {
     position: absolute;
     top: 8px;
     left: 16px;
-<<<<<<< HEAD
     color: black;
     font-family: adobe-handwriting-ernie, sans-serif;
     font-weight: 600;
     font-style: normal;
-=======
+
     color: white;
     font-family: adobe-handwriting-ernie, sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 30px;
->>>>>>> master
+
 }
 
 
@@ -86,33 +84,32 @@ font-style: normal;
 }
 
 .img-comp-container {
-<<<<<<< HEAD
+
     position: relative;
     height: 400px;
     /*should be the same height as the images*/
-=======
+
 
 
     position: relative;
     height: 400px;
     /*should be the same height as the images*/
     width: 100%;
->>>>>>> master
+
 
 }
 
 .img-comp-img {
     position: absolute;
-<<<<<<< HEAD
     width: auto;
     height: auto;
     overflow: hidden;
-=======
+
     width: 100%;
     height: auto;
     overflow: hidden;
 
->>>>>>> master
+
 }
 
 .img-comp-img img {
@@ -124,18 +121,17 @@ font-style: normal;
     position: absolute;
     z-index: 9;
     cursor: ew-resize;
-<<<<<<< HEAD
+
     /*set the appearance of the slider:*/
-=======
+
     /*set the appearance of the slider button:*/
->>>>>>> master
+
     width: 40px;
     height: 40px;
     background-color: black;
     opacity: 0.7;
     border-radius: 50%;
-<<<<<<< HEAD
-=======
+
 }
 
 
@@ -214,18 +210,17 @@ ul {
     content: "";
     display: table;
     clear: both;
->>>>>>> master
+
 }
 
 .right {
     float: right;
     position: sticky;
 }
-<<<<<<< HEAD
-/* https://www.w3schools.com/howto/howto_js_sidenav.asp */
-=======
 
->>>>>>> master
+/* https://www.w3schools.com/howto/howto_js_sidenav.asp */
+
+
 /* The side navigation menu */
 .sidenav {
     height: 100%;
@@ -265,11 +260,11 @@ ul {
 
 
 /* Position and style the close button (top right corner) */
-<<<<<<< HEAD
-.sidenav .closebtn {
-=======
+
+
+
   .sidenav .closebtn {
->>>>>>> master
+
     position: absolute;
     top: 0;
     right: 25px;
@@ -284,11 +279,11 @@ ul {
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-<<<<<<< HEAD
+
 @media screen and (max-height: 450px) {
-=======
+
  @media screen and (max-height: 450px) {
->>>>>>> master
+
     .sidenav {
         padding-top: 15px;
     }
@@ -312,9 +307,7 @@ ul {
     background-size: cover;
 }
 
-/* Lukas old code 
 
-<<<<<<< HEAD
 /* https://www.w3schools.com/w3css/w3css_dropdowns.asp */
     
 @media only screen and (max-width: 600px) {
@@ -357,7 +350,7 @@ ul {
             border-radius: 50%;
             margin-left: 17vw;
         }
-=======
+
 .dropbtn {
     font-size: 16px;
     border: none;
@@ -391,5 +384,5 @@ ul {
 .show {
     display: block;
 }
-*/
->>>>>>> master
+
+
