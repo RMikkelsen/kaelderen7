@@ -54,6 +54,10 @@ font-style: normal;
     font-weight: 600;
     font-style: normal;
 
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
     font-size: 30px;
 
 }
@@ -62,6 +66,10 @@ font-style: normal;
     position: absolute;
     top: 8px;
     left: 16px;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     color: black;
     font-family: adobe-handwriting-ernie, sans-serif;
     font-weight: 600;
@@ -101,6 +109,10 @@ font-style: normal;
 
 .img-comp-img {
     position: absolute;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     width: auto;
     height: auto;
     overflow: hidden;
@@ -132,6 +144,10 @@ font-style: normal;
     opacity: 0.7;
     border-radius: 50%;
 
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
 }
 
 
@@ -260,10 +276,15 @@ ul {
 
 
 /* Position and style the close button (top right corner) */
+<<<<<<< Updated upstream
 
 
 
   .sidenav .closebtn {
+=======
+<<<<<<< HEAD
+.sidenav .closebtn {
+>>>>>>> Stashed changes
 
     position: absolute;
     top: 0;
@@ -280,10 +301,14 @@ ul {
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
+<<<<<<< Updated upstream
 @media screen and (max-height: 450px) {
 
  @media screen and (max-height: 450px) {
 
+=======
+ @media screen and (max-height: 450px) {
+>>>>>>> Stashed changes
     .sidenav {
         padding-top: 15px;
     }
