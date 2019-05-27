@@ -39,7 +39,11 @@ font-style: normal;
 /* to zoom header logo on scroll from W3 schools*/
 
 
-
+.slideimage {
+    width: 2000px;
+    height: 400px;
+}
+    
 /* text on slider images*/
 .top-right {
     position: absolute;
@@ -64,6 +68,7 @@ font-style: normal;
 }
 
 
+}
 /*from W3 schools, must have relative positioning - Ruth */
 
 * {
@@ -212,7 +217,10 @@ ul {
     /* 0.5 second transition effect to slide in the sidenav */
 }
 
+
 /* The opening days and hours */
+
+
 .sidenav a {
     padding: 16px 16px 16px 32px;
     text-decoration: none;
@@ -222,8 +230,9 @@ ul {
     transition: 0.3s;
 }
 
+
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+  .sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -238,7 +247,7 @@ ul {
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+ @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
     }
@@ -262,7 +271,7 @@ ul {
     background-size: cover;
 }
 
-
+/* Lukas old code 
 
 .dropbtn {
     font-size: 16px;
@@ -297,3 +306,4 @@ ul {
 .show {
     display: block;
 }
+*/
