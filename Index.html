@@ -52,6 +52,7 @@
             }, false);
 
         }, false);
+
     </script>
 
 
@@ -74,6 +75,7 @@
     </div>
     <script>
         initComparisons();
+
     </script>
 
     <div class="content">
@@ -223,27 +225,28 @@
     <div>
 
         <!--Here is the menu with the tile background -->
-   <div class="bg">
+        <div class="bg">
 
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn"><img src="images/menu%20item.jpg"></button>
-            <div id="myDropdown" class="dropdown-content">
-                <a>sanwich 1</a>
-                <a>sandmich 3</a>
-                <a>sandwitch 4</a>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"><img src="images/sandwich.png"></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a>sanwich 1</a>
+                    <a>sandmich 3</a>
+                    <a>sandwitch 4</a>
+                </div>
             </div>
+
+            <script>
+                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+            </script>
+
         </div>
 
-        <script>
-            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-            function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
-            }
-        </script>
-
-    </div>
-
-<!-- kiosk items section-->
+        <!-- kiosk items section-->
 
 
         <div class="column3" class="kiosktext">
@@ -260,7 +263,7 @@
         </div>
 
     </div>
-    
+
 
     <div class="right">
         <div id="mySidenav" class="sidenav">
@@ -297,101 +300,63 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
+
     </script>
 
-
-   
-   <div class="info_column">
-    <div id='map'></div>
-
-    <!--Here is the menu with the tile background -->
-    <div class="bg">
-        <h1>Menu</h1>
-        <p>"Our menu changes regularly. Please stop in for the most current selection."</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn"><img src="images/menu%20item.jpg"></button>
-            <div id="myDropdown" class="dropdown-content">
-                <a>sanwich 1</a>
-                <a>sandmich 3</a>
-                <a>sandwitch 4</a>
-            </div>
-        </div>
-
+        <div class="info_column">
+            <div id='map'></div>
+    </div>
+    
         <script>
-            /* When the user clicks on the button, 
-                                                toggle between hiding and showing the dropdown content */
-            function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
-            }
-        </script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoidGh1bmRlcnNvbiIsImEiOiJjanRnd2t1dTAwb3NwM3lydWQ4Y2E5enh0In0.RujQPBvmr0gH64Nm24612Q';
 
-    </div>
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/thunderson/cjvyzrpks02b81co3b7tqvfys',
+                center: [10.203342, 56.154616],
+                zoom: 16.0
+            });
 
+            map.on('load', function() {
+                map.loadImage('https://cdn4.iconfinder.com/data/icons/maps-and-navigation-solid-icons-vol-1/72/19-512.png', function(error, image) {
+                    if (error) throw error;
+                    map.addImage('location', image);
+                    map.addLayer({
+                        "id": "points",
+                        "type": "symbol",
+                        "source": {
+                            "type": "geojson",
+                            "data": {
+                                "type": "FeatureCollection",
+                                "features": [{
+                                    "type": "Feature",
+                                    "geometry": {
+                                        "type": "Point",
+                                        "coordinates": [10.203366, 56.154820]
+                                    }
+                                }]
+                            }
+                        },
+                        "layout": {
+                            "icon-image": "location",
+                            "icon-size": 0.14,
 
-    <div class="info_column">
-        <div id='map'></div>
-
-    </div>
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoidGh1bmRlcnNvbiIsImEiOiJjanRnd2t1dTAwb3NwM3lydWQ4Y2E5enh0In0.RujQPBvmr0gH64Nm24612Q';
-
-        var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/thunderson/cjvyzrpks02b81co3b7tqvfys',
-            center: [10.203342, 56.154616],
-            zoom: 16.0
-        });
-
-        map.on('load', function() {
-            map.loadImage('https://cdn4.iconfinder.com/data/icons/maps-and-navigation-solid-icons-vol-1/72/19-512.png', function(error, image) {
-                if (error) throw error;
-                map.addImage('location', image);
-                map.addLayer({
-                    "id": "points",
-                    "type": "symbol",
-                    "source": {
-                        "type": "geojson",
-                        "data": {
-                            "type": "FeatureCollection",
-                            "features": [{
-                                "type": "Feature",
-                                "geometry": {
-                                    "type": "Point",
-                                    "coordinates": [10.203366, 56.154820]
-                                }
-                            }]
                         }
-                    },
-                    "layout": {
-                        "icon-image": "location",
-                        "icon-size": 0.14,
-
-                    }
+                    });
                 });
             });
-        });
-    </script>
+
+        </script>
 
 <div class="info_column">
-  
-    <h2>Address: &emsp;&emsp; J.M. Mørks Gade 7 klth 8000 Aarhus, Denmark
-       <br>
-        Contact: &emsp;&emsp; +45 12 34 56 78</h2>
-   
 
-    <div class="info_column">
-
-        <p>Address</p>
+        <h2>Address: &emsp;&emsp; J.M. Mørks Gade 7 klth 8000 Aarhus, Denmark
+            <br>
+            Contact: &emsp;&emsp; +45 12 34 56 78</h2>
+    
+        </div>
 
 
-    </div>
-
-    </body>
+</body>
 
 </html>
