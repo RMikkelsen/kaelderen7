@@ -423,4 +423,123 @@ ul {
   height: auto;
     }
 
+        .dropdown-content1 {
+        display: none;
+        position: relative;
+        background-color: #f1f1f1;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content1 a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    .show1 {
+        display: block;
+    }
+
+    .dropbtn1 {
+        font-size: 16px;
+        border: none;
+        width: 100%;
+  max-width: 400px;
+  height: auto;
+    }
+    
+        .dropdown-content2 {
+        display: none;
+        position: relative;
+        background-color: #f1f1f1;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content2 a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    .show2 {
+        display: block;
+    }
+
+    .dropbtn2 {
+        font-size: 16px;
+        border: none;
+        width: 100%;
+  max-width: 400px;
+  height: auto;
+    }
+    
+        .dropdown-content3 {
+        display: none;
+        position: relative;
+        background-color: #f1f1f1;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content3 a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    .show3 {
+        display: block;
+    }
+
+    .dropbtn3 {
+        font-size: 16px;
+        border: none;
+        width: 100%;
+  max-width: 400px;
+  height: auto;
+    }
+
+        .dropdown-content4 {
+        display: none;
+        position: relative;
+        background-color: #f1f1f1;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content4 a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    .show4 {
+        display: block;
+    }
+
+    .dropbtn4 {
+        font-size: 16px;
+        border: none;
+        width: 100%;
+  max-width: 400px;
+  height: auto;
+    }
+
+    
 }
+    
+

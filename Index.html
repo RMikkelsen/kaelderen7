@@ -92,6 +92,26 @@ function growShrinkLogo() {
 
     </script>
 
+       <div class="right">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- What you are going to be presented when sidenav opens up. &ensp; - 2 extra spaces; &emsp; - 4 extra spaces; &nbsp; - 1 extra space. -->
+            <a>Opening hours</a>
+            <br>
+            <br>
+            <a>Monday &emsp;&emsp;&nbsp; Closed</a>
+            <a>Tuesday &emsp;&emsp;&nbsp; 9:00 - 20:00</a>
+            <a>Wednesday &emsp; 9:00 - 20:00</a>
+            <a>Thursday &emsp;&nbsp;&nbsp;&nbsp; 8:00 - 21:00</a>
+            <a>Friday &emsp;&emsp;&emsp; 8:00 - 21:00</a>
+            <a>Saturday &emsp;&emsp; 7:00 - 21:00</a>
+            <a>Sunday &emsp;&emsp;&ensp; 8:00 - 19:00</a>
+        </div>
+
+        <!-- Using an image to open the sidenav -->
+        <span onclick="openNav()"><img src="images/clock_logo_png_287768.png"></span>
+    </div>
+   
     <div class="content">
 
 
@@ -234,12 +254,8 @@ function growShrinkLogo() {
             </div>
 
         </div>
-    </div>
-
-    <div>
 
         <!--Here is the menu with the tile background -->
-        <div class="bg">
 
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn"><img src="images/sandwich.png"></button>
@@ -258,7 +274,76 @@ function growShrinkLogo() {
 
             </script>
 
-        </div>
+       <div class="dropdown">
+                <button onclick="myFunction1()" class="dropbtn1"><img src="images/beer.png"></button>
+                <div id="myDropdown1" class="dropdown-content1">
+                    <a>beeeer 1</a>
+                    <a>berber 3</a>
+                    <a>reeeb 4</a>
+                </div>
+            </div>
+
+            <script>
+                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                function myFunction1() {
+                    document.getElementById("myDropdown1").classList.toggle("show1");
+                }
+
+            </script>
+       
+        
+        <div class="dropdown">
+                <button onclick="myFunction2()" class="dropbtn2"><img src="images/Coffee.png"></button>
+                <div id="myDropdown2" class="dropdown-content2">
+                    <a>coufeeee 1</a>
+                    <a>cafyyy 3</a>
+                    <a>Kofyeye 4</a>
+                </div>
+            </div>
+
+            <script>
+                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                function myFunction2() {
+                    document.getElementById("myDropdown2").classList.toggle("show2");
+                }
+
+            </script>
+
+       <div class="dropdown">
+                <button onclick="myFunction3()" class="dropbtn3"><img src="images/extras.png"></button>
+                <div id="myDropdown3" class="dropdown-content3">
+                    <a>xtra 1</a>
+                    <a>ekstra 3</a>
+                    <a>more stuff 4</a>
+                </div>
+            </div>
+
+            <script>
+                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                function myFunction3() {
+                    document.getElementById("myDropdown3").classList.toggle("show3");
+                }
+
+            </script>
+       
+       <div class="dropdown">
+                <button onclick="myFunction4()" class="dropbtn4"><img src="images/wine.png"></button>
+                <div id="myDropdown4" class="dropdown-content4">
+                    <a>whine 1</a>
+                    <a>winnie the pooh 3</a>
+                    <a>wayne 4</a>
+                </div>
+            </div>
+
+            <script>
+                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                function myFunction4() {
+                    document.getElementById("myDropdown4").classList.toggle("show4");
+                }
+
+            </script>
+       
+    </div>
 
         <!-- kiosk items section-->
 
@@ -275,34 +360,6 @@ function growShrinkLogo() {
                 <img src="images/staytapas.jpg" class="tapas">
             </div>
         </div>
-
-    </div>
-
-
-    <div class="right">
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <!-- What you are going to be presented when sidenav opens up. &ensp; - 2 extra spaces; &emsp; - 4 extra spaces; &nbsp; - 1 extra space. -->
-            <a>Opening hours</a>
-            <br>
-            <br>
-            <a>Monday &emsp;&emsp;&nbsp; Closed</a>
-            <a>Tuesday &emsp;&emsp;&nbsp; 9:00 - 20:00</a>
-            <a>Wednesday &emsp; 9:00 - 20:00</a>
-            <a>Thursday &emsp;&nbsp;&nbsp;&nbsp; 8:00 - 21:00</a>
-            <a>Friday &emsp;&emsp;&emsp; 8:00 - 21:00</a>
-            <a>Saturday &emsp;&emsp; 7:00 - 21:00</a>
-            <a>Sunday &emsp;&emsp;&ensp; 8:00 - 19:00</a>
-        </div>
-
-        <!-- Using an image to open the sidenav -->
-        <span onclick="openNav()"><img src="images/clock_logo_png_287768.png"></span>
-    </div>
-
-    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-    <div id="main">
-
-    </div>
 
     <script>
         /* Set the width of the side navigation to 450px */
