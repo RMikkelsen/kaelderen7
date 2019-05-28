@@ -59,7 +59,7 @@ font-style: normal;
 
 .slideimage {
     width: 1000px;
-    height: 300px;
+    height: 400px;
 }
 
 /* text on slider images*/
@@ -102,7 +102,7 @@ font-style: normal;
     position: relative;
     /*height: 400px;*/
     /*should be the same height as the images*/
-    height: 300px;
+    height: 400px;
     width: 800px;
    margin-left: auto;
     margin-right: auto;
@@ -115,7 +115,7 @@ font-style: normal;
 .img-comp-img {
     position: absolute;
 
-    height: 300px;
+    height: 400px;
     overflow: hidden;
 
     width: 100%;
@@ -310,7 +310,7 @@ ul {
     width: 50%;
 }
 
-<<<<<<< Updated upstream
+Updated upstream
 .info_column h2 {
     text-align: left;
     padding: 32px 32px 32px 32px;
@@ -420,7 +420,7 @@ ul {
     }
 
 }
-=======
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
 
@@ -428,7 +428,7 @@ ul {
 
     @media screen and (max-height: 450px) {
 
-        =======@media screen and (max-height: 450px) {
+       @media screen and (max-height: 450px) {
             > > > > > > > Stashed changes .sidenav {
                 padding-top: 15px;
             }
@@ -519,4 +519,4 @@ ul {
                 display: block;
             }
         }
->>>>>>> Stashed changes
+
