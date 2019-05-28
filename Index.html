@@ -35,13 +35,27 @@
         console.log('I am outside the window load thing ...');
         window.addEventListener('load', function() {
             console.log('Hey am I on or what?');
-            var logo = document.getElementById('logo'),
+        
+window.onscroll = function() {
+  growShrinkLogo()
+};
+<!-- https://stackoverflow.com/questions/42460930/how-to-resize-navbar-logo-on-scroll-down/42462835 -->
+function growShrinkLogo() {
+  var logo = document.getElementById("logo")
+  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+    logo.style.width = '300px';
+  } else {
+    logo.style.width = '700px';
+  }
+}
+
+         var logo = document.getElementById('logo'),
                 docHeight = document.documentElement.offsetHeight;
 
             window.addEventListener('scroll', function() {
                 // normalize scroll position as percentage
                 var scrolled = window.scrollY / (docHeight - window.innerHeight),
-                    transformValue = 'scale(' + scrolled + ')';
+                    transformValue = 'scale(' + 300 + 'px' + ')';
 
                 logo.style.WebkitTransform = transformValue;
                 logo.style.MozTransform = transformValue;
@@ -185,13 +199,13 @@
                             Ceres Top (15 kr)
                         </li>
                         <li>
-                            Filter Coffee
+                            India Pale Ale
                         </li>
                         <li>
-                            Filter Coffee
+                            Carlsberg
                         </li>
                         <li>
-                            Filter Coffee
+                            Tuborg
                         </li>
 
                     </ul>
@@ -203,16 +217,16 @@
 
                     <ul>
                         <li>
-                            Filter Coffee
+                            Pinot Noir
                         </li>
                         <li>
-                            Filter Coffee
+                            Merlot
                         </li>
                         <li>
-                            Filter Coffee
+                            Chardonnay
                         </li>
                         <li>
-                            Filter Coffee
+                            Pinot Gris
                         </li>
 
                     </ul>

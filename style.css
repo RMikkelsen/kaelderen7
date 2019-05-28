@@ -23,8 +23,9 @@ font-style: normal;
 #header-container {
     background-color: black;
     background: cover;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
 
 }
 
@@ -39,18 +40,23 @@ font-style: normal;
 
 
 #header {
-    width: 800px;
+    width: 700px;
     height: auto;
-
+margin-left:auto;
+    margin-right: auto;
     top: 0;
+    
 }
 
 #logo {
 
     margin-left: auto;
     margin-right: auto;
-    transition: all 0.3s;
-
+    transition: all 0.6s;
+width: 700px;
+    height: auto;
+    min-width: 300px;
+    min-height: auto;
 }
 
 
@@ -106,9 +112,11 @@ font-style: normal;
     width: 800px;
    margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
    border-style: groove;
     border-color: green;
  overflow: hidden;
+ 
 
 }
 
@@ -196,15 +204,13 @@ ul {
 .column {
     float: left;
     width: 33.33%;
-    border: black;
-    border-style: solid;
+   
 }
 
 .column2 {
     float: right;
     width: 50%;
-    border: black;
-    border-style: solid;
+   
 
 }
 
@@ -311,6 +317,10 @@ ul {
     margin-left: 15%;
 }
 
+.kiosktext {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
 /* Background for the menu */
 
 .bg {
