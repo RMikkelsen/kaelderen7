@@ -23,7 +23,7 @@
 
     <header id="header-container">
         <div id="header">
-            <img src="images/logoheader.png" class="logo" id="logo">
+            <img src="images/logoheader.png" class="logo" id="logo" alt="A logo of deli called kaelderen7">
         </div>
 
     </header>
@@ -75,14 +75,14 @@
         <div class="img-comp-img">
 
 
-            <img src="images/coffeetogo.png" class="slideimage">
+            <img src="images/coffeetogo.png" class="slideimage" alt="A girl holding a cup of coffee in a car">
             <div class="top-right">To Go</div>
         </div>
 
 
         <div class="img-comp-img img-comp-overlay">
 
-            <img src="images/foodtostay.png" class="slideimage">
+            <img src="images/foodtostay.png" class="slideimage" alt="A drink and a sandwich">
             <div class="top-left">To Stay</div>
 
         </div>
@@ -109,7 +109,7 @@
         </div>
 
         <!-- Using an image to open the sidenav -->
-        <span onclick="openNav()"><img src="images/clock_logo_png_287768.png"></span>
+        <span onclick="openNav()"><img src="images/clock_logo_png_287768.png" alt="A very simplistic black clock"></span>
     </div>
 
     <div class="content">
@@ -196,7 +196,7 @@
                             'Gul Krystal' cheese, Tomme savoie, black and green olive tapenade, bread (80kr)
                         </li>
                         <li>
-                            + Bresaola 20kr
+                            + Bresaola (20kr)
                         </li>
                         <li>
                             Fresh roll with cheese (25kr)
@@ -255,10 +255,8 @@
 
         </div>
 
-        <!--Here is the menu with the tile background -->
-
         <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn"><img src="images/sandwich.png"></button>
+            <button onclick="myFunction()" class="dropbtn"><img src="images/sandwich.png" alt="A button that says sandwiches"></button>
             <div id="myDropdown" class="dropdown-content">
                 <a>sanwich 1</a>
                 <a>sandmich 3</a>
@@ -275,7 +273,7 @@
         </script>
 
         <div class="dropdown">
-            <button onclick="myFunction1()" class="dropbtn1"><img src="images/beer.png"></button>
+            <button onclick="myFunction1()" class="dropbtn1"><img src="images/beer.png" alt="A button that says beer"></button>
             <div id="myDropdown1" class="dropdown-content1">
                 <a>beeeer 1</a>
                 <a>berber 3</a>
@@ -284,7 +282,6 @@
         </div>
 
         <script>
-            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
             function myFunction1() {
                 document.getElementById("myDropdown1").classList.toggle("show1");
             }
@@ -293,7 +290,7 @@
 
 
         <div class="dropdown">
-            <button onclick="myFunction2()" class="dropbtn2"><img src="images/Coffee.png"></button>
+            <button onclick="myFunction2()" class="dropbtn2"><img src="images/Coffee.png" alt="A button that says Coffee"></button>
             <div id="myDropdown2" class="dropdown-content2">
                 <a>coufeeee 1</a>
                 <a>cafyyy 3</a>
@@ -302,7 +299,6 @@
         </div>
 
         <script>
-            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
             function myFunction2() {
                 document.getElementById("myDropdown2").classList.toggle("show2");
             }
@@ -310,7 +306,7 @@
         </script>
 
         <div class="dropdown">
-            <button onclick="myFunction3()" class="dropbtn3"><img src="images/extras.png"></button>
+            <button onclick="myFunction3()" class="dropbtn3"><img src="images/extras.png" alt="A button that says Extras"></button>
             <div id="myDropdown3" class="dropdown-content3">
                 <a>xtra 1</a>
                 <a>ekstra 3</a>
@@ -319,7 +315,6 @@
         </div>
 
         <script>
-            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
             function myFunction3() {
                 document.getElementById("myDropdown3").classList.toggle("show3");
             }
@@ -327,7 +322,7 @@
         </script>
 
         <div class="dropdown">
-            <button onclick="myFunction4()" class="dropbtn4"><img src="images/wine.png"></button>
+            <button onclick="myFunction4()" class="dropbtn4"><img src="images/wine.png" alt=" A button that says Wine"></button>
             <div id="myDropdown4" class="dropdown-content4">
                 <a>whine 1</a>
                 <a>winnie the pooh 3</a>
@@ -336,7 +331,6 @@
         </div>
 
         <script>
-            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
             function myFunction4() {
                 document.getElementById("myDropdown4").classList.toggle("show4");
             }
@@ -357,9 +351,11 @@
     </div>
     <div class="column3">
         <div>
-            <img src="images/staytapas.jpg" class="tapas">
+            <img src="images/staytapas.jpg" class="tapas" alt="A delicious meal with a bit of meat, beer, pickles, etc">
         </div>
     </div>
+
+    <!-- Opens up the sidenav bar -->
 
     <script>
         /* Set the width of the side navigation to 450px */
@@ -375,8 +371,13 @@
     </script>
 
     <div class="info_column">
+
+        <!-- Shows the map on the left side -->
+
         <div id='map'></div>
     </div>
+
+    <!-- Code gets access to maps, loads my style of map. Then it loads the location pin on the coordinates of our coffee shop -->
 
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoidGh1bmRlcnNvbiIsImEiOiJjanRnd2t1dTAwb3NwM3lydWQ4Y2E5enh0In0.RujQPBvmr0gH64Nm24612Q';
@@ -385,8 +386,10 @@
             container: 'map',
             style: 'mapbox://styles/thunderson/cjvyzrpks02b81co3b7tqvfys',
             center: [10.203342, 56.154616],
-            zoom: 16.0
+            zoom: 16.0,
         });
+
+        //-https://docs.mapbox.com/mapbox-gl-js/example/add-image/
 
         map.on('load', function() {
             map.loadImage('https://cdn4.iconfinder.com/data/icons/maps-and-navigation-solid-icons-vol-1/72/19-512.png', function(error, image) {
@@ -421,25 +424,23 @@
 
     <div class="info_column">
 
-        <h2>Address: &emsp;&emsp; J.M. Mørks Gade 7 klth 8000 Aarhus, Denmark
+        <h2>Address: &emsp;&emsp; <a href="https://www.google.dk/maps/place/J.+M.+M%C3%B8rks+Gade+7,+8000+Aarhus/@56.1547354,10.2012506,17z/data=!3m1!4b1!4m5!3m4!1s0x464c3f925bc40aa3:0x7589a28eff19e48c!8m2!3d56.1547354!4d10.2034393">J.M. Mørks Gade 7 klth 8000 Aarhus, Denmark</a>
             <br>
             Contact: &emsp;&emsp; +45 12 34 56 78</h2>
 
     </div>
 
-
 </body>
 
 <footer>
-<div class="SoMe">
-    <p>E-mail:</p>
+    <div class="SoMe">
+        <p>E-mail: kontakt@kaelderen7.dk</p>
     </div>
     <div class="SoMe">
-        <a href="https://www.facebook.com/Kaelderen7/?__tn__=%2Cd%2CP-R&eid=ARA0btPopKMwWWkSPxgfC9PyfFTmftCv5fyktTgNxjNwxohm98KMbHTJqJFHcTDqv-cX9qUaFsTCOdyD"><img src="images/1024px-F_icon.svg.png"></a>
-        <a href="https://www.instagram.com/kaelderen7/"><img src="images/instagram-v051916.png"></a>
+        <a href="https://www.facebook.com/Kaelderen7/?__tn__=%2Cd%2CP-R&eid=ARA0btPopKMwWWkSPxgfC9PyfFTmftCv5fyktTgNxjNwxohm98KMbHTJqJFHcTDqv-cX9qUaFsTCOdyD"><img src="images/1024px-F_icon.svg.png" alt="Facebook icon"></a>
+        <a href="https://www.instagram.com/kaelderen7/"><img src="images/instagram-v051916.png" alt="Instagram icon"></a>
     </div>
 
 </footer>
-
 
 </html>

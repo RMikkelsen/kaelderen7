@@ -304,6 +304,7 @@ ul {
     height: 500px;
     padding: 32px 32px 32px 32px;
     margin-left:10%;
+    margin-bottom: 2%;
 }
 
 .info_column {
@@ -347,6 +348,7 @@ footer {
    color: white;
    text-align: center;
    z-index: 10;
+    display: none;
 }
 
 .SoMe {
@@ -354,6 +356,7 @@ footer {
     width:50px;
     float:left;
     width:50%;
+    display: none;
 }
 
 /* Displays the rows of the menu, doesn't display the dropdowns*/
@@ -558,7 +561,14 @@ footer {
   height: auto;
     }
 
-    
+}
+
+footer {
+   position:fixed;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
 }
     
 
