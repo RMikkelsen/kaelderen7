@@ -35,21 +35,21 @@
         console.log('I am outside the window load thing ...');
         window.addEventListener('load', function() {
             console.log('Hey am I on or what?');
-        
-window.onscroll = function() {
-  growShrinkLogo()
-};
-<!-- https://stackoverflow.com/questions/42460930/how-to-resize-navbar-logo-on-scroll-down/42462835 -->
-function growShrinkLogo() {
-  var logo = document.getElementById("logo")
-  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-    logo.style.width = '300px';
-  } else {
-    logo.style.width = '700px';
-  }
-}
 
-         var logo = document.getElementById('logo'),
+            window.onscroll = function() {
+                growShrinkLogo()
+            }; <
+            !--https: //stackoverflow.com/questions/42460930/how-to-resize-navbar-logo-on-scroll-down/42462835 -->
+                function growShrinkLogo() {
+                    var logo = document.getElementById("logo")
+                    if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+                        logo.style.width = '300px';
+                    } else {
+                        logo.style.width = '700px';
+                    }
+                }
+
+            var logo = document.getElementById('logo'),
                 docHeight = document.documentElement.offsetHeight;
 
             window.addEventListener('scroll', function() {
@@ -92,7 +92,7 @@ function growShrinkLogo() {
 
     </script>
 
-       <div class="right">
+    <div class="right">
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <!-- What you are going to be presented when sidenav opens up. &ensp; - 2 extra spaces; &emsp; - 4 extra spaces; &nbsp; - 1 extra space. -->
@@ -111,7 +111,7 @@ function growShrinkLogo() {
         <!-- Using an image to open the sidenav -->
         <span onclick="openNav()"><img src="images/clock_logo_png_287768.png"></span>
     </div>
-   
+
     <div class="content">
 
 
@@ -257,109 +257,109 @@ function growShrinkLogo() {
 
         <!--Here is the menu with the tile background -->
 
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn"><img src="images/sandwich.png"></button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a>sanwich 1</a>
-                    <a>sandmich 3</a>
-                    <a>sandwitch 4</a>
-                </div>
-            </div>
-
-            <script>
-                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-                function myFunction() {
-                    document.getElementById("myDropdown").classList.toggle("show");
-                }
-
-            </script>
-
-       <div class="dropdown">
-                <button onclick="myFunction1()" class="dropbtn1"><img src="images/beer.png"></button>
-                <div id="myDropdown1" class="dropdown-content1">
-                    <a>beeeer 1</a>
-                    <a>berber 3</a>
-                    <a>reeeb 4</a>
-                </div>
-            </div>
-
-            <script>
-                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-                function myFunction1() {
-                    document.getElementById("myDropdown1").classList.toggle("show1");
-                }
-
-            </script>
-       
-        
         <div class="dropdown">
-                <button onclick="myFunction2()" class="dropbtn2"><img src="images/Coffee.png"></button>
-                <div id="myDropdown2" class="dropdown-content2">
-                    <a>coufeeee 1</a>
-                    <a>cafyyy 3</a>
-                    <a>Kofyeye 4</a>
-                </div>
+            <button onclick="myFunction()" class="dropbtn"><img src="images/sandwich.png"></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a>sanwich 1</a>
+                <a>sandmich 3</a>
+                <a>sandwitch 4</a>
             </div>
+        </div>
 
-            <script>
-                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-                function myFunction2() {
-                    document.getElementById("myDropdown2").classList.toggle("show2");
-                }
+        <script>
+            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
 
-            </script>
+        </script>
 
-       <div class="dropdown">
-                <button onclick="myFunction3()" class="dropbtn3"><img src="images/extras.png"></button>
-                <div id="myDropdown3" class="dropdown-content3">
-                    <a>xtra 1</a>
-                    <a>ekstra 3</a>
-                    <a>more stuff 4</a>
-                </div>
+        <div class="dropdown">
+            <button onclick="myFunction1()" class="dropbtn1"><img src="images/beer.png"></button>
+            <div id="myDropdown1" class="dropdown-content1">
+                <a>beeeer 1</a>
+                <a>berber 3</a>
+                <a>reeeb 4</a>
             </div>
+        </div>
 
-            <script>
-                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-                function myFunction3() {
-                    document.getElementById("myDropdown3").classList.toggle("show3");
-                }
+        <script>
+            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+            function myFunction1() {
+                document.getElementById("myDropdown1").classList.toggle("show1");
+            }
 
-            </script>
-       
-       <div class="dropdown">
-                <button onclick="myFunction4()" class="dropbtn4"><img src="images/wine.png"></button>
-                <div id="myDropdown4" class="dropdown-content4">
-                    <a>whine 1</a>
-                    <a>winnie the pooh 3</a>
-                    <a>wayne 4</a>
-                </div>
+        </script>
+
+
+        <div class="dropdown">
+            <button onclick="myFunction2()" class="dropbtn2"><img src="images/Coffee.png"></button>
+            <div id="myDropdown2" class="dropdown-content2">
+                <a>coufeeee 1</a>
+                <a>cafyyy 3</a>
+                <a>Kofyeye 4</a>
             </div>
+        </div>
 
-            <script>
-                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-                function myFunction4() {
-                    document.getElementById("myDropdown4").classList.toggle("show4");
-                }
+        <script>
+            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+            function myFunction2() {
+                document.getElementById("myDropdown2").classList.toggle("show2");
+            }
 
-            </script>
-       
+        </script>
+
+        <div class="dropdown">
+            <button onclick="myFunction3()" class="dropbtn3"><img src="images/extras.png"></button>
+            <div id="myDropdown3" class="dropdown-content3">
+                <a>xtra 1</a>
+                <a>ekstra 3</a>
+                <a>more stuff 4</a>
+            </div>
+        </div>
+
+        <script>
+            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+            function myFunction3() {
+                document.getElementById("myDropdown3").classList.toggle("show3");
+            }
+
+        </script>
+
+        <div class="dropdown">
+            <button onclick="myFunction4()" class="dropbtn4"><img src="images/wine.png"></button>
+            <div id="myDropdown4" class="dropdown-content4">
+                <a>whine 1</a>
+                <a>winnie the pooh 3</a>
+                <a>wayne 4</a>
+            </div>
+        </div>
+
+        <script>
+            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+            function myFunction4() {
+                document.getElementById("myDropdown4").classList.toggle("show4");
+            }
+
+        </script>
+
     </div>
 
-        <!-- kiosk items section-->
+    <!-- kiosk items section-->
 
 
-        <div class="column3" class="kiosktext">
-            <h1>Kiosk Items</h1>
-            <h3>
-                Check out our Kiosk and specialty items for your everyday needs.
-            </h3>
-            <h3> We hand-select each item based on quality products, sustainability, or just what you need in the park on a warm, sunny day!</h3>
+    <div class="column3" class="kiosktext">
+        <h1>Kiosk Items</h1>
+        <h3>
+            Check out our Kiosk and specialty items for your everyday needs.
+        </h3>
+        <h3> We hand-select each item based on quality products, sustainability, or just what you need in the park on a warm, sunny day!</h3>
+    </div>
+    <div class="column3">
+        <div>
+            <img src="images/staytapas.jpg" class="tapas">
         </div>
-        <div class="column3">
-            <div>
-                <img src="images/staytapas.jpg" class="tapas">
-            </div>
-        </div>
+    </div>
 
     <script>
         /* Set the width of the side navigation to 450px */
@@ -374,60 +374,72 @@ function growShrinkLogo() {
 
     </script>
 
-        <div class="info_column">
-            <div id='map'></div>
+    <div class="info_column">
+        <div id='map'></div>
     </div>
-    
-        <script>
-            mapboxgl.accessToken = 'pk.eyJ1IjoidGh1bmRlcnNvbiIsImEiOiJjanRnd2t1dTAwb3NwM3lydWQ4Y2E5enh0In0.RujQPBvmr0gH64Nm24612Q';
 
-            var map = new mapboxgl.Map({
-                container: 'map',
-                style: 'mapbox://styles/thunderson/cjvyzrpks02b81co3b7tqvfys',
-                center: [10.203342, 56.154616],
-                zoom: 16.0
-            });
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoidGh1bmRlcnNvbiIsImEiOiJjanRnd2t1dTAwb3NwM3lydWQ4Y2E5enh0In0.RujQPBvmr0gH64Nm24612Q';
 
-            map.on('load', function() {
-                map.loadImage('https://cdn4.iconfinder.com/data/icons/maps-and-navigation-solid-icons-vol-1/72/19-512.png', function(error, image) {
-                    if (error) throw error;
-                    map.addImage('location', image);
-                    map.addLayer({
-                        "id": "points",
-                        "type": "symbol",
-                        "source": {
-                            "type": "geojson",
-                            "data": {
-                                "type": "FeatureCollection",
-                                "features": [{
-                                    "type": "Feature",
-                                    "geometry": {
-                                        "type": "Point",
-                                        "coordinates": [10.203366, 56.154820]
-                                    }
-                                }]
-                            }
-                        },
-                        "layout": {
-                            "icon-image": "location",
-                            "icon-size": 0.14,
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/thunderson/cjvyzrpks02b81co3b7tqvfys',
+            center: [10.203342, 56.154616],
+            zoom: 16.0
+        });
 
+        map.on('load', function() {
+            map.loadImage('https://cdn4.iconfinder.com/data/icons/maps-and-navigation-solid-icons-vol-1/72/19-512.png', function(error, image) {
+                if (error) throw error;
+                map.addImage('location', image);
+                map.addLayer({
+                    "id": "points",
+                    "type": "symbol",
+                    "source": {
+                        "type": "geojson",
+                        "data": {
+                            "type": "FeatureCollection",
+                            "features": [{
+                                "type": "Feature",
+                                "geometry": {
+                                    "type": "Point",
+                                    "coordinates": [10.203366, 56.154820]
+                                }
+                            }]
                         }
-                    });
+                    },
+                    "layout": {
+                        "icon-image": "location",
+                        "icon-size": 0.14,
+
+                    }
                 });
             });
+        });
 
-        </script>
+    </script>
 
-<div class="info_column">
+    <div class="info_column">
 
         <h2>Address: &emsp;&emsp; J.M. Mørks Gade 7 klth 8000 Aarhus, Denmark
             <br>
             Contact: &emsp;&emsp; +45 12 34 56 78</h2>
-    
-        </div>
+
+    </div>
 
 
 </body>
+
+<footer>
+<div class="SoMe">
+    <p>E-mail:</p>
+    </div>
+    <div class="SoMe">
+        <a href="https://www.facebook.com/Kaelderen7/?__tn__=%2Cd%2CP-R&eid=ARA0btPopKMwWWkSPxgfC9PyfFTmftCv5fyktTgNxjNwxohm98KMbHTJqJFHcTDqv-cX9qUaFsTCOdyD"><img src="images/1024px-F_icon.svg.png"></a>
+        <a href="https://www.instagram.com/kaelderen7/"><img src="images/instagram-v051916.png"></a>
+    </div>
+
+</footer>
+
 
 </html>
