@@ -12,7 +12,7 @@ function initComparisons() {
     compareImages(x[i]);
   }
   function compareImages(img) {
-    var slider, img, clicked = 0, w, h;
+    var slider, clicked = 0, w, h;
     /* Get the width and height of the img element */
     w = img.offsetWidth;
     h = img.offsetHeight;

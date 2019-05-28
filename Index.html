@@ -17,15 +17,42 @@
 
 </head>
 
+
+
 <body>
 
     <header id="header-container">
         <div id="header">
-            <img src="images/logoheader.png" class="logo">
+            <img src="images/logoheader.png" class="logo" id="logo">
         </div>
 
     </header>
 
+
+    <!-- https://jsfiddle.net/yxq1rgzo/7/v Ruth -->
+
+    <script>
+        console.log('I am outside the window load thing ...');
+        window.addEventListener('load', function() {
+            console.log('Hey am I on or what?');
+            var logo = document.getElementById('logo'),
+                docHeight = document.documentElement.offsetHeight;
+
+            window.addEventListener('scroll', function() {
+                // normalize scroll position as percentage
+                var scrolled = window.scrollY / (docHeight - window.innerHeight),
+                    transformValue = 'scale(' + scrolled + ')';
+
+                logo.style.WebkitTransform = transformValue;
+                logo.style.MozTransform = transformValue;
+                logo.style.OTransform = transformValue;
+                logo.style.transform = transformValue;
+                console.log(transformValue);
+
+            }, false);
+
+        }, false);
+    </script>
 
 
     <!-- from W3 schools img slider - Ruth-->
@@ -33,14 +60,14 @@
         <div class="img-comp-img">
 
 
-            <img src="images/coffeetogo.jpg"  class="slideimage">
+            <img src="images/coffeetogo.jpg" class="slideimage">
             <div class="top-right">To Go</div>
         </div>
 
 
         <div class="img-comp-img img-comp-overlay">
 
-            <img src="images/staybfast.jpg" class="slideimage">
+            <img src="images/foodtostay.png" class="slideimage">
             <div class="top-left">To Stay</div>
 
         </div>
@@ -65,23 +92,30 @@
         <p>(Our menu changes regularly. Please stop in for the most current selection)</p>
         <div class="row">
             <div class="column">
-              <h2>
+                <h2>
                     Coffee
                 </h2>
                 <h3>
 
                     <ul>
                         <li>
-                            Filter Coffee
+                            Filter Coffee (10 kr)
                         </li>
                         <li>
-                            Filter Coffee
+                            Americano (15 kr)
                         </li>
                         <li>
-                            Filter Coffee
+                            Cortado (20 kr)
                         </li>
                         <li>
-                            Filter Coffee
+                            Cappuccino (23 kr)
+                        </li>
+                        <li>
+                            Latte (25 kr)
+                        </li>
+
+                        <li>
+                            <br>
                         </li>
 
                     </ul>
@@ -93,16 +127,20 @@
 
                     <ul>
                         <li>
-                            Filter Coffee
+                            Truffle sausage, brie, green olive tapenade, cornichons (60 kr)
                         </li>
                         <li>
-                            Filter Coffee
+                            Ham, tomme savoe, black olive tapenade (45 kr)
                         </li>
                         <li>
-                            Filter Coffee
+                            Ham, sweet mustard, cornichons (40 kr)
                         </li>
                         <li>
-                            Filter Coffee
+                            Bresaola, mozzarella, tapenade, arugula (60 kr)
+                        </li>
+
+                        <li>
+                            Chorizo, Mortadella, tapenade, arugula (45 kr)
                         </li>
 
                     </ul>
@@ -110,22 +148,25 @@
             </div>
             <div class="column">
                 <h2>
-                    Plates and Extras
+                    A little Mix
                 </h2>
                 <h3>
 
                     <ul>
                         <li>
-                            Filter Coffee
+                            Ham, truffle sausage, chorizo, brie, havgus (80 kr)
                         </li>
                         <li>
-                            Filter Coffee
+                            'Gul Krystal' cheese, Tomme savoie, black and green olive tapenade, bread (80kr)
                         </li>
                         <li>
-                            Filter Coffee
+                            + Bresaola 20kr
                         </li>
                         <li>
-                            Filter Coffee
+                            Fresh roll with cheese (25kr)
+                        </li>
+                        <li>
+                            Yogurt with Muesli (25kr)
                         </li>
 
                     </ul>
@@ -139,7 +180,7 @@
 
                     <ul>
                         <li>
-                            Filter Coffee
+                            Ceres Top (15 kr)
                         </li>
                         <li>
                             Filter Coffee
@@ -213,7 +254,7 @@
             <h3> We hand-select each item based on quality products, sustainability, or just what you need in the park on a warm, sunny day!</h3>
         </div>
         <div class="column3">
-            <div >
+            <div>
                 <img src="images/staytapas.jpg" class="tapas">
             </div>
         </div>
@@ -258,9 +299,44 @@
         }
     </script>
 
+<<<<<<< Updated upstream
    
    <div class="info_column">
     <div id='map'></div>
+=======
+    <!--Here is the menu with the tile background -->
+    <div class="bg">
+        <h1>Menu</h1>
+        <p>"Our menu changes regularly. Please stop in for the most current selection."</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><img src="images/menu%20item.jpg"></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a>sanwich 1</a>
+                <a>sandmich 3</a>
+                <a>sandwitch 4</a>
+            </div>
+        </div>
+
+        <script>
+            /* When the user clicks on the button, 
+                                                toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+        </script>
+
+    </div>
+
+
+    <div class="info_column">
+        <div id='map'></div>
+>>>>>>> Stashed changes
     </div>
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoidGh1bmRlcnNvbiIsImEiOiJjanRnd2t1dTAwb3NwM3lydWQ4Y2E5enh0In0.RujQPBvmr0gH64Nm24612Q';
@@ -295,20 +371,26 @@
                     "layout": {
                         "icon-image": "location",
                         "icon-size": 0.14,
-                        
+
                     }
                 });
             });
         });
-
     </script>
 
+<<<<<<< Updated upstream
 <div class="info_column">
   
     <h2>Address: &emsp;&emsp; J.M. Mørks Gade 7 klth 8000 Aarhus, Denmark
        <br>
         Contact: &emsp;&emsp; +45 12 34 56 78</h2>
    
+=======
+    <div class="info_column">
+
+        <p>Address</p>
+
+>>>>>>> Stashed changes
     </div>
 
 </body>
